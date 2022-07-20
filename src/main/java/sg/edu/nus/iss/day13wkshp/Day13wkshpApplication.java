@@ -28,7 +28,7 @@ public class Day13wkshpApplication implements ApplicationRunner {
 			dbSvc.setDataDir(new File(dataDir));
 
 			if (!dbSvc.isDataDirValid()) {
-				System.err.printf("%s does not exist, is not a directory or not writeable.");
+				System.err.printf("%s does not exist, is not a directory or not writeable.", dataDir);
 				System.exit(-1);
 			}
 
@@ -39,12 +39,6 @@ public class Day13wkshpApplication implements ApplicationRunner {
 
 	}
 
-	public boolean save() {
-		
-	}
 	
-	public void read (String fileId) {
-		
-	}
 }
 
